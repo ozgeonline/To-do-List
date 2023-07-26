@@ -1,0 +1,68 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #F2ECFF70;
+}
+.form{
+  position: absolute;
+  top: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  width: 400px;
+  border-radius: 7px;
+  background-color: #bdb2ff;
+}
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px;
+  border-radius: 7px 7px 0 0;
+  border: none;
+  font-size: 18px;
+  color: #ACA9BB;
+}
+.input::placeholder{
+  color: #bdb2ff;
+  letter-spacing: 1px;
+}
+.input:focus{
+  outline-color: #bdb2ff;
+}
+.list{
+  padding: 0;
+  margin: 0;
+}
+.list li{
+  list-style-type: none;
+  padding: 10px 14px;
+  border-top: dotted;
+  border-color: #fffffc;
+  color: #fffffc;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+.list li .fa-check{
+  color: #fbff12;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li .fa-trash-can{
+  color: #EE736D;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li.checked{
+  color: #ACA9BB;
+  text-decoration: line-through;
+}
+.list li.checked .fa-check{
+  color: #ACA9BB;
+}
